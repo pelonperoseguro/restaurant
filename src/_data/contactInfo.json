@@ -1,0 +1,47 @@
+{
+  "image": {
+    "url": "/assets/about.jpg",
+    "css": "sm-aspect-ratio-1 lg-aspect-ratio-1/1",
+    "altText": "libro"
+  },
+  "listDescriptions": [
+    {
+      "tag": "h1",
+      "text": "PONTE EN CONTACTO"
+    },
+    {
+      "tag": "p",
+      "text": "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."
+    },
+    {
+      "tag": "p",
+      "text": "Tel: 123-456-7890 | Email:<a href='mailto:mmnlcarvajal@gmail.com'>info@mysite.com</a>"
+    }
+  ],
+  "price": {},
+  "direction": "",
+  "styles": {
+    "sectionOne": "",
+    "sectionTwo": "sm-padding-block-4rem",
+    "sectionOneContent": "",
+    "sectionTwoContent": "sm-padding-inline-4rem md-padding-inline-5rem lg-padding-inline-8rem"
+  },
+  "forms": [
+    {
+      "type": "text",
+      "text": "description"
+    },
+    {
+      "type": "text",
+      "text": "description"
+    },
+    {
+      "type": "text",
+      "text": "description"
+    },
+    {
+      "type": "text",
+      "text": "description"
+    }
+  ]
+}

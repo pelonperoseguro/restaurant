@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  padding-block: 2rem 0.5rem;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer__list__item__link {
+  font-size: 1.6rem;
+}
+.footer__text {
+  text-align: center;
+  font-family: poppins;
+}

@@ -1,0 +1,36 @@
+.post {
+  width: 100%;
+  padding-inline: 3rem;
+}
+
+:where(.post) h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+:where(.post) h2 {
+  font-size: 1.7rem;
+  margin-block-end: 1rem;
+}
+:where(.post) p,
+:where(.post) ul li {
+  font-family: poppins;
+  font-size: 1.4rem;
+  text-wrap: pretty;
+}
+
+:where(.post) ul {
+  margin-block: 2rem;
+  padding-inline: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+:is(.post p img) {
+  margin-block: 2rem;
+  padding-inline: 1rem;
+}
+
+@media only screen and (width >= 992px) {
+  .post {
+    padding-inline: 10rem;
+  }
+}

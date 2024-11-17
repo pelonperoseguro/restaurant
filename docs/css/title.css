@@ -1,0 +1,10 @@
+.title {
+  padding-block: 1rem;
+  font-size: 4rem;
+  text-align: center;
+}
+@media only screen and (width >= 768px) {
+  .title {
+    font-size: 5rem;
+  }
+}

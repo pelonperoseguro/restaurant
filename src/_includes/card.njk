@@ -1,0 +1,49 @@
+{% from "input.njk" import input %} {% macro card(image, listDescriptions,
+styles, price, direction, forms) %}
+<section class="card">
+  <article class="card__item {{ styles.sectionOne }} {{ direction }}">
+    <div class="card__item__content-img {{ styles.sectionOneContent }}">
+      <img
+        class="img {{ image.css }}"
+        src="{{ image.url }}"
+        alt="{{ image.altText }}"
+      />
+    </div>
+  </article>
+  <article class="card__item {{ styles.sectionTwo }}">
+    <div class="card__item__content-text {{ styles.sectionTwoContent }}">
+      {% for item in listDescriptions %} {% if item.tag == "h1" %}
+      <h1>{{ item.text }}</h1>
+
+      {% elif item.tag == "h2" %}
+      <h2 class="{{ item.css }}">{{ item.text }}</h2>
+
+      {% elif item.tag == "p" %}
+      <p>{{ item.text }}</p>
+
+      {% endif %} {% endfor %} {% if price | length != 0 %}
+      <div class="card__content-price">
+        <span>
+          <span class="card__content-price__price {{ price.css }}">{{
+            price.number
+          }}</span>
+          <sub>$</sub>
+        </span>
+        <button class="button-border">
+          <a href="#" class="button-border__link">
+            <span class="button-border__link__text">comprar ahora</span>
+          </a>
+        </button>
+      </div>
+      {% endif %} {% if forms | length != 0 %}
+      <form class="content-grid-gap-2">
+        {% for item in forms %}
+        {{ input(item.type, item.text) }}
+        {% endfor %}
+      </form>
+      {% endif %}
+    </div>
+  </article>
+</section>
+
+{% endmacro %}

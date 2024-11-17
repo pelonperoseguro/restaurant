@@ -1,0 +1,58 @@
+---
+layout: layout-pages.njk
+title: "Menu"
+description: "El mejor lugar para que vuelvas a vivir"
+---
+
+<main class="menu">
+  <article class="menu__section">
+    <button id="arrowRight" class="menu__section__button menu__section__button--right">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 36 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="0.5"
+      >
+        <path d="M 25 6 q 4 6 10 6" />
+        <path d="M5 12 l 30 0"></path>
+        <path d="M 25 18 q 4 -6 10 -6"></path>
+      </svg>
+    </button>
+    <h1 class="menu__section__text">Brunch</h1>
+    <button id="arrowLeft" class="menu__section__button menu__section__button--left">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 36 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="0.5"
+      >
+        <path d="M 25 6 q 4 6 10 6" />
+        <path d="M5 12 l 30 0"></path>
+        <path d="M 25 18 q 4 -6 10 -6"></path>
+      </svg>
+    </button>
+  </article>
+
+  <section class="menu__container">
+    {% for section in menuInfo %}
+    <article class="menu__container__section">
+      {% for item in section %}
+      <p>{{ item }}</p>
+      {% endfor %}
+    </article>
+    {% endfor %}
+  </section>
+</main>
+
+{# , [ "Menú Omakase de Tacos", "Tostada de cangrejo, chicatana, berros,
+martajada", "Salpicón de langosta, alcachofas", "Taco de macarela, chile güero",
+"Callo margarita, salsa de vainilla, habanero", "Tlayuda de atún, castacán",
+"Taco de jaiba de concha suave, pimienta Szechuan, mole verde de pistache, arroz
+jazmín", "Empanada de chorizo de pescado", "Mole madre 3556 días, mole nuevo
+hecho con fruta de temporada, Cremoso de guanábana, cítricos" ] #}

@@ -1,0 +1,48 @@
+<nav class="globalwidth nav">
+  <div>
+    <a href="/" class="nav__link">B.ARLETTE</a>
+    <span><input type="checkbox" class="swich" id="swich"></span>
+  </div>
+  <button id="navToggleOpen" class="nav__toggle nav_button">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="0.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M4 6l16 0" />
+      <path d="M4 12l16 0" />
+      <path d="M4 18l16 0" />
+    </svg>
+  </button>
+  <ul id="navList" class="nav__list">
+    <li>
+      <button id="navToggleClose" class="nav__list__item__button nav_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 5l3.585 3.585a4.83 4.83 0 0 0 6.83 0l3.585 -3.585" />
+          <path d="M5 19l3.585 -3.585a4.83 4.83 0 0 1 6.83 0l3.585 3.584" />
+        </svg>
+      </button>
+    </li>
+    {% for item in navigation %}
+    <li class="nav__list__item">
+      <a class="nav__list__item__link" href="{{ item.url }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,39 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px),1fr));
+  align-items: center;
+}
+.card_rtl {
+  order: 1;
+}
+/* .card__item__content-img {} */
+.card__item__content-text {
+  display: grid;
+  gap: 20px;
+  padding-inline: 20px;
+  font-family: poppins;
+}
+:where(.card__item__content-text) > h1 {
+  font-family: "cinzel";
+  font-size: 2rem;
+  word-break: break-all;
+}
+:where(.card__item__content-text) > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  word-break: break-all;
+}
+:where(.card__item__content-text) > p {
+  word-break: break-all;
+}
+.card__content-price {
+  display: flex;
+  justify-content: space-between;
+}
+/* ---------- */
+
+@media only screen and (width >= 1200px) {
+  .card__item__content-text {
+    padding-inline: 60px;
+  }
+}

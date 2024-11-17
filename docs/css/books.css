@@ -1,0 +1,36 @@
+.books {
+  display: grid;
+  gap: 20px;
+}
+
+.text-large {
+  font-family: "cinzel";
+  font-weight: 100;
+  font-size: 13vw;
+}
+.border-blue {
+  padding-block: 2rem;
+}
+@media only screen and (width >= 600px) {
+  .text-large {
+    font-size: 10vw;
+  }
+}
+@media only screen and (width >= 768px) {
+  .books {
+    padding-inline: 5rem;
+  }
+  .text-large {
+    font-size: 5vw;
+  }
+}
+@media only screen and (width >= 992px) {
+  .border-blue {
+    background: rgb(240, 243, 246);
+  }
+}
+@media only screen and (width >= 1200px) {
+  .text-large {
+    font-size: 64px;
+  }
+}

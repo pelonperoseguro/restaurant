@@ -1,0 +1,15 @@
+---
+layout: layout-pages.njk
+title: "Blog"
+description: "El mejor lugar para que vuelvas a vivir"
+---
+
+{% from "post.njk" import post %}
+
+<main class="blog">
+  <section>
+    {% for item in collections.resetas %}
+      {{ post(item.data.title, item.data.description, item.data.date, item.data.imagen) }}
+    {% endfor %}
+  </section>
+</main>

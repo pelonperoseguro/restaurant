@@ -1,0 +1,16 @@
+---
+layout: layout-pages.njk
+title: "Restorant"
+description: "El mejor lugar para que vuelvas a vivir"
+---
+{% import "card.njk" as book %}
+{% from "title.njk" import title %}
+<main class="books">
+    {{title("Libros")}}
+    {% for item in books %}
+    <div class="border-blue">
+        {{ book.card(item.image, item.listDescriptions, item.styles, item.price, item.direction, item.forms) }}
+    </div>
+    {% endfor %}
+    
+</main>

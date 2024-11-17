@@ -1,0 +1,15 @@
+{% macro post(title, description, date, image) %}
+
+<div class="card-container">
+  <div class="card-post">
+    <div class="img-content">
+      <img src="{{image}}" class="img" alt="ljgkjhjk">
+    </div>
+    <div class="content">
+      <p class="heading">{{title}}</p>
+      <p>{{description}}</p>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

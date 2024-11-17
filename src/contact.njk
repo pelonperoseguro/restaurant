@@ -1,0 +1,11 @@
+---
+layout: layout-pages.njk
+title: "Restorant"
+description: "El mejor lugar para que vuelvas a vivir"
+---
+
+{% from "card.njk" import card %}
+<main class="contact">
+    {{ card(contactInfo.image, contactInfo.listDescriptions, contactInfo.styles, contactInfo.price, contactInfo.direction, contactInfo.forms) }}
+    
+</main>

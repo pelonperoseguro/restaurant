@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Inicio",
+    "url": "/"
+  },
+  {
+    "name": "Menu",
+    "url": "/menu"
+  },
+  {
+    "name": "Acerca de",
+    "url": "/about"
+  },
+  {
+    "name": "Libros",
+    "url": "/books"
+  },
+  {
+    "name": "Blog",
+    "url": "/blog"
+  },
+  {
+    "name": "Contacto",
+    "url": "/contact"
+  }
+]
